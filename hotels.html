@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>SEDONA</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<nav class="main-navigation">
+					<ul>
+						<li>
+							<a href="#">Информация</a>
+						</li>
+						<li>
+							<a href="#">Фото и видео</a>
+						</li>
+						<li>
+							<a href="#">Карта штата</a>
+						</li>
+						<li>
+							<a href="#">Гостиницы</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="selection">
+				<div class="form">
+					<form  action="#" method="post" id="select">
+						<p>Инфраструктура:</p>
+						<label>Бассейн <input type="checkbox" name="pool" checked></label>
+						<label>Парковка <input type="checkbox" name="parking"></label>
+						<label>Wi-Fi <input type="checkbox" name="WF"></label>
+						<p>Тип жилья:</p>
+						<label>Гостиница <input type="checkbox" name="hotel" checked></label>
+						<label>Мотель <input type="checkbox" name="motel" checked></label>
+						<label>Апартаменты <input type="checkbox" name="apartments" checked></label>
+						<p>Стоимость в сутки (p)</p>
+						<table>
+							<tr>
+								<td>от 0</td>
+								<td>до 3000</td>
+							</tr>
+						</table>
+						<input type="range" min="0" max="3000">
+						<input type="submit" value="Показать">
+					</form>
+				</div>
+			</div>
+			<div>
+				<div>
+					<p>Найдено:</p><span>3</span>
+				</div>
+				<div>
+					<p>Сортировка</p>
+					<p>По цене</p>
+					<p>По типу</p>
+					<p>По рейтингу</p>
+				</div>
+				<div>
+					<div>
+						<div>
+							<img src="img/hotels-img1.png" alt="Amara Resort">
+						</div>
+						<div>
+							<p>Amara Resort &amp; SPA</p>
+							<table>
+								<tr>
+									<td>гостиница</td>
+									<td>от 3500</td>
+								</tr>
+							</table>
+							<button type="button" value="Подробнее">
+							<form  action="#" method="post" id="booking_hotel">
+								<input type="submit" value="Забронировать">
+							</form>
+						</div>
+						<div>
+							<a href="#">Рейтинг:8,5</a>
+						</div>
+					</div>
+					<div>
+						<div>
+							<img src="img/hotels-img2.png" alt="Desert Quail">
+						</div>
+						<div>
+							<p>Desert Quail INN</p>
+							<table>
+								<tr>
+									<td>мотель</td>
+									<td>от 2000</td>
+								</tr>
+							</table>
+							<button type="button" value="Подробнее">
+							<form  action="#" method="post" id="booking_motel">
+								<input type="submit" value="Забронировать">
+							</form>
+						</div>
+						<div>
+							<a href="#">Рейтинг:8,9</a>
+						</div>
+					</div>
+					<div>
+						<div>
+							<img src="img/hotels-img3.png" alt="Villas at poco">
+						</div>
+						<div>
+							<p>Villas at</p>
+							<table>
+								<tr>
+									<td>апартаменты</td>
+									<td>от 4000</td>
+								</tr>
+							</table>
+							<button type="button" value="Подробнее">
+							<form  action="#" method="post" id="booking_apartments">
+								<input type="submit" value="Забронировать">
+							</form>
+						</div>
+						<div>
+							<a href="#">Рейтинг:9,2</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer_hashtag">
+				<p>#VISITSEDONA</p>
+			</div>
+			<div class="footer_social">
+				<a class="social_btm social-btn-Twitter" href="#">Twitter</a>
+				<a class="social_btm social-btn-Facebook" href="#">Facebook</a>
+				<a class="social_btm social-btn-YouTube" href="#">YouTube</a>
+			</div>
+			<div class="footer_copyright">
+				<p>WEBSITE BY</p>
+				<a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+			</div>
+		</footer>
+	</body>
+</html>
