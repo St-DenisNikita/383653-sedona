@@ -5,59 +5,77 @@
 		<title>SEDONA</title>
 	</head>
 	<body>
-		<header class="main-header">
-			<div class="container">
-				<nav class="main-navigation">
-					<ul>
-						<li>
-							<a href="#">Информация</a>
-						</li>
-						<li>
-							<a href="#">Фото и видео</a>
-						</li>
-						<li>
-							<a href="#">Карта штата</a>
-						</li>
-						<li>
-							<a href="#">Гостиницы</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main>
-			<div class="selection">
-				<div class="form">
-					<form  action="#" method="post" id="select">
-						<p>Инфраструктура:</p>
-						<label>Бассейн <input type="checkbox" name="pool" checked></label>
-						<label>Парковка <input type="checkbox" name="parking"></label>
-						<label>Wi-Fi <input type="checkbox" name="WF"></label>
-						<p>Тип жилья:</p>
-						<label>Гостиница <input type="checkbox" name="hotel" checked></label>
-						<label>Мотель <input type="checkbox" name="motel" checked></label>
-						<label>Апартаменты <input type="checkbox" name="apartments" checked></label>
-						<p>Стоимость в сутки (p)</p>
-						<table>
-							<tr>
-								<td>от 0</td>
-								<td>до 3000</td>
-							</tr>
-						</table>
-						<input type="range" min="0" max="3000">
-						<input type="submit" value="Показать">
-					</form>
+		<div class="wrapper">
+			<header class="main-header">
+				<div class="container">
+					<nav class="main-navigation">
+						<ul>
+							<li>
+								<a href="#">Информация</a>
+							</li>
+							<li>
+								<a href="#">Фото и видео</a>
+							</li>
+							<li>
+								<a href="#">Карта штата</a>
+							</li>
+							<li>
+								<a href="#">Гостиницы</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/index-img0.png" alt="Логотип">
+						</a>
+					</div>
 				</div>
-			</div>
-			<div>
+			</header>
+			<main>
+				<div class="promo">
+					<img src="img/hotels-img.png" alt="Баннер">
+				</div>
+				<div class="selection">
+					<div class="form">
+						<form  action="#" method="get" id="select">
+							<span>Инфраструктура:</span>
+							<label>Бассейн <input type="checkbox" name="pool" checked></label>
+							<label>Парковка <input type="checkbox" name="parking"></label>
+							<label>Wi-Fi <input type="checkbox" name="WF"></label>
+							<span>Тип жилья:</span>
+							<label>Гостиница <input type="checkbox" name="hotel" checked></label>
+							<label>Мотель <input type="checkbox" name="motel" checked></label>
+							<label>Апартаменты <input type="checkbox" name="apartments" checked></label>
+							<span>Стоимость в сутки (p)</span>
+							<div>
+								<input type="text" name="price-min" value="от 0" placeholder="от 0">
+								<input type="text" name="price-max" value="до 3000" placeholder="до 3000">
+							</div>
+							<div>
+							
+							</div>
+							<input type="submit" value="Показать">
+						</form>
+					</div>
+				</div>
 				<div>
 					<p>Найдено:</p><span>3</span>
 				</div>
 				<div>
-					<p>Сортировка</p>
-					<p>По цене</p>
-					<p>По типу</p>
-					<p>По рейтингу</p>
+					<span>Сортировка</span>
+					<ul>
+						<li>
+							<a href="#">по цене</a>
+						</li>
+						<li>
+							<a href="#">по типу</a>
+						</li>
+						<li>
+							<a href="#">по рейтингу</a>
+						</li>
+					</ul>
+					<a href="#"></a>
+					<a href="#"></a>
 				</div>
 				<div>
 					<div>
@@ -72,8 +90,8 @@
 									<td>от 3500</td>
 								</tr>
 							</table>
-							<button type="button" value="Подробнее">Подробнее</button>
-							<button type="submit" value="Забронировать">Забронировать</button>
+							<a href="#">Подробнее</a>
+							<a href="#">Забронировать</a>
 						</div>
 						<div>
 							<a href="#">Рейтинг:8,5</a>
@@ -91,8 +109,8 @@
 									<td>от 2000</td>
 								</tr>
 							</table>
-							<button type="button" value="Подробнее">Подробнее</button>
-							<button type="submit" value="Забронировать">Забронировать</button>
+							<a href="#">Подробнее</a>
+							<a href="#">Забронировать</a>
 						</div>
 						<div>
 							<a href="#">Рейтинг:8,9</a>
@@ -103,36 +121,40 @@
 							<img src="img/hotels-img3.png" alt="Villas at poco">
 						</div>
 						<div>
-							<p>Villas at</p>
+							<p>Villas at poco diablo</p>
 							<table>
 								<tr>
 									<td>апартаменты</td>
 									<td>от 4000</td>
 								</tr>
 							</table>
-							<button type="button" value="Подробнее">Подробнее</button>
-							<button type="submit" value="Забронировать">Забронировать</button>
+							<a href="#">Подробнее</a>
+							<a href="#">Забронировать</a>
 						</div>
 						<div>
 							<a href="#">Рейтинг:9,2</a>
 						</div>
 					</div>
 				</div>
-			</div>
-		</main>
-		<footer>
+			</main>
+			<footer>
 			<div class="footer_hashtag">
-				<p>#VISITSEDONA</p>
+				<div>
+					#VISITSEDONA
+				</div>
 			</div>
 			<div class="footer_social">
-				<a class="social_btm social-btn-Twitter" href="#">Twitter</a>
-				<a class="social_btm social-btn-Facebook" href="#">Facebook</a>
-				<a class="social_btm social-btn-YouTube" href="#">YouTube</a>
+				<a class="social_btm social-btn-twitter" href="#">Twitter</a>
+				<a class="social_btm social-btn-facebook" href="#">Facebook</a>
+				<a class="social_btm social-btn-youtube" href="#">YouTube</a>
 			</div>
 			<div class="footer_copyright">
-				<p>WEBSITE BY</p>
+				<div>
+					WEBSITE BY
+				</div>
 				<a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 			</div>
-		</footer>
+			</footer>
+		</div>
 	</body>
 </html>
