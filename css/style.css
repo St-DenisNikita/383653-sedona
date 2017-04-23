@@ -1,5 +1,5 @@
 body {
-	color: #000000;
+	color: #333333;
 	font-family: "PT Sans", "Arial", serif;
 	font-weight: normal;
 	font-size: 14px;
@@ -7,8 +7,18 @@ body {
 }
 h1 {
 	color: #000000;
-	font-family: "PT Sans", "Arial", serif;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
+}
+h2{
+	color: #000000;
+	font-weight: bold;
+}
+.heading-reason {
+	font-size: 21px;
+}
+.heading-search {
+	font-size: 30px;
+	line-height: 24px;
 }
