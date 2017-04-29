@@ -4,7 +4,7 @@ body {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
-	background-color: #FFFFFF;
+	background-color: #F2F2F2;
 	margin: 0;
 	padding: 0;
 }
@@ -25,34 +25,56 @@ h2{
 	font-size: 30px;
 	line-height: 24px;
 }
-
-
-
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+li{
+	margin: 0;
+	padding: 0;
+}
 .wrapper{
 	margin: 0 auto;
 	width: 1200px;
 	background-color: #DDCDFF;
 }
 .main-header{
-	background-color: red;
+	background-color: #FFFFFF;
 	min-height: 56px;
 	width: 1200px;
 }
+li a{
+	font-family: "PT Sans", "Arial", serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 20px; 
+}
+
 .nav-left{
+	text-align: center;
 	float: left;
 	width: 239px;
 	min-height: 56px;
-	background-color: green;
+	background-color: #FFFFFF;
+	text-transform: uppercase;
 }
 .nav-right{
+	text-align: center;
 	float: right;
 	width: 239px;
 	min-height: 56px;
-	background-color: green;
+	background-color: #FFFFFF;
+	text-transform: uppercase;
 }
 .logo{
 	display: inline-block;
 	margin-left: 56px;
+	position: absolute;
 }
 
 .promo{
@@ -116,6 +138,9 @@ footer{
 	min-height: 120px;
 }
 .footer_hashtag{
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
 	float: left;
 	height: 120px;
 	width: 400px;
