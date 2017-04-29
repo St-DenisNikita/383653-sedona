@@ -6,22 +6,21 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
+	<div class="wrapper">
 		<header class="main-header">
 			<nav class="main-navigation">
-				<ul>
-					<li>
+					<div  class="nav-left">
 						<a href="#">Информация</a>
-					</li>
-					<li>
+					</div>
+					<div  class="nav-left">
 						<a href="#">Фото и видео</a>
-					</li>
-					<li>
+					</div>
+					<div  class="nav-right">
 						<a href="#">Карта штата</a>
-					</li>
-					<li>
+					</div>
+					<div  class="nav-right">
 						<a href="#">Гостиницы</a>
-					</li>
-				</ul>
+					</div>
 			</nav>
 			<div class="logo">
 				<a href="index.html">
@@ -32,7 +31,7 @@
 		<main>
 			<div class="selection-hotels">
 				<form  action="#" method="post" id="select">
-					<fieldset>
+					<fieldset class="infrastructure">
 						<legend>Инфраструктура:</legend>
 							<input type="checkbox" name="pool" id="pool-select" checked>
 							<label for="pool-select">Бассейн</label>
@@ -41,7 +40,7 @@
 							<input type="checkbox" name="WF" id="WF-select">
 							<label for="WF-select">Wi-Fi</label>
 					</fieldset>
-					<fieldset>
+					<fieldset class="accommodation">
 						<legend>Тип жилья:</legend>
 							<input type="checkbox" name="hotel" id="hotel-select" checked>
 							<label for="hotel-select">Гостиница</label>
@@ -50,7 +49,7 @@
 							<input type="checkbox" name="apartments" id="apartments-select" checked>
 							<label for="apartments-select">Апартаменты</label>
 					</fieldset>
-					<fieldset>	
+					<fieldset class="cost">	
 						<legend>Стоимость в сутки (p):</legend>
 							<div class="price-select">
 								<label>от
@@ -67,10 +66,11 @@
 								</div>
 								<button class="button"></button>
 							</div>
+							<button type="submit">Показать</button>
 					</fieldset>
-					<button type="submit">Показать</button>
 				</form>
 			</div>
+			<div class="compilation-hotels">
 			<div class="sorting-hotels">
 				<div class="found">
 					<p>Найдено:<span>3</span></p>
@@ -92,7 +92,6 @@
 					<a href="#"><img src="img/hotels-down.png" alt="вниз"></a>
 				</div>
 			</div>
-			<div class="compilation-hotels">
 				<div class="hotel">
 					<div class="img-hotel">
 						<img src="img/photo4.jpg" width="135" height="90" alt="Amara Resort">
@@ -157,7 +156,7 @@
 		</main>
 		<footer>
 			<div class="footer_hashtag">
-				<div>
+				<div class="hashtag">
 					#VISITSEDONA
 				</div>
 			</div>
@@ -175,5 +174,6 @@
 				</a>
 			</div>
 		</footer>
+		</div>
 	</body>
 </html>
