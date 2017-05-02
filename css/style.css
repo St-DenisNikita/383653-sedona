@@ -21,10 +21,10 @@ body {
 	clear: both;
 }
 
-/*.element-float{
-	float: left;
-	width: 1200px;
-}*/
+ ul,li,p {
+ 	margin:0;
+ 	padding:0;
+ }
 
 h1 {
 	color: #000000;
@@ -193,6 +193,18 @@ h2{
 .sorting-hotels, .hotel{
 	float: left;
 	width: 1200px;
+}
+
+.found, .sorting-name, .sorting-item{
+	float: left;
+}
+
+.sorting-list{
+	list-style-type: none;
+}
+
+.sorting-nav{
+	float: right;
 }
 
 .img-hotel{
