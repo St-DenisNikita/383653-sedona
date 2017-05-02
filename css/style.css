@@ -1,217 +1,208 @@
 body {
 	color: #333333;
 	font-family: "PT Sans", "Arial", serif;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
-	background-color: #F2F2F2;
 	margin: 0;
 	padding: 0;
+	background-color: #F2F2F2;
 }
+
+.container{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*.element-float{
+	float: left;
+	width: 1200px;
+}*/
+
 h1 {
 	color: #000000;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 21px;
 	line-height: 26px;
 }
+
 h2{
 	color: #000000;
-	font-weight: bold;
+	font-weight: 700;
 }
+
 .heading-reason {
 	font-size: 21px;
 }
+
 .heading-search {
 	font-size: 30px;
 	line-height: 24px;
 }
-ul{
-	margin: 0;
-	padding: 0;
+
+.nav-list{
 	list-style-type: none;
-}
-li{
-	margin: 0;
 	padding: 0;
-}
-.wrapper{
-	margin: 0 auto;
-	width: 1200px;
-	background-color: #DDCDFF;
-}
-.main-header{
-	background-color: #FFFFFF;
-	min-height: 56px;
-	width: 1200px;
-}
-li a{
-	font-family: "PT Sans", "Arial", serif;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 26px;
-	color: #000000;
-	text-decoration: none;
-	display: inline-block;
-	margin-top: 20px; 
+	background-color: yellow;
 }
 
-.nav-left{
-	text-align: center;
+.nav-item{
 	float: left;
-	width: 239px;
-	min-height: 56px;
-	background-color: #FFFFFF;
-	text-transform: uppercase;
+	width: 240px;
+	background-color: red;
 }
-.nav-right{
-	text-align: center;
-	float: right;
-	width: 239px;
-	min-height: 56px;
-	background-color: #FFFFFF;
-	text-transform: uppercase;
+
+.nav-item:nth-child(3){
+	margin-left: 240px;
 }
+
+.main-header{
+	background-color: blue;
+	position: relative;
+}
+
+.main-navigation{
+	background-color: green;
+}
+
 .logo{
-	display: inline-block;
-	margin-left: 56px;
 	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -69px;
 }
 
 .promo{
-	background-color: yellow;
 	width: 1200px;
-	height: 773px;
-	clear: both;
+	background-color: green;
 }
 
 .causes{
 	float: left;
-	background-color: blue;
+	background-color: pink;
 	width: 1200px;
-	min-height: 216px;
 }
-.reason{
-	float: left;
-	width: 1200px;
-	height: 256px;
+
+.reason-line{
+	background-color: #81b3d2;
+	color: #ffffff;
 }
-.reason_block{
+
+.reason-block{
 	float: left;
 	width: 400px;
-	height: 256px;
 }
-.reason_img{
+
+.reason-picture{
 	float: left;
 	width: 800px;
 	height: 256px;
+	position: relative;
+	overflow: hidden;
 }
-.reason_block-r{
-	float: right;
-	width: 400px;
-	height: 256px;
+
+.reason-img{
+	width: 100%;
+	height: auto;
+	transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
 }
-.hotel_search{
+
+.reason-row{
+	background-color: purple;
+}
+
+.reason-block1{
 	float: left;
-	background-color: #F38EFF;
+	width: 400px;
+}
+
+.hotel-search{
+	float: left;
+	background-color: lightblue;
 	width: 1200px;
 }
+
 .map{
 	float: left;
 	width: 1200px;
-	min-height: 593px;
-	margin-bottom: 0;
+	height: 473px;
+	position: relative;
+	overflow: hidden;
 }
+
+.map-img{
+	width: 100%;
+	height: auto;
+	transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+}
+
 .form{
 	float: left;
-	width: 597px;
-	height: 424px;
-	background-color: #D4FFFF;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0;
+	background-color: lightgreen;
+	margin-left: 368px;
+	margin-right: 368px;
+	width: 568px;
 }
-footer{
-	background-color: #D0FF00;
+
+.footer-hashtag{
 	float: left;
-	clear: both;
-	width: 1200px;
-	min-height: 120px;
+	width: 400px;
 }
-.footer_hashtag{
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 26px;
+
+.footer-social{
 	float: left;
-	height: 120px;
 	width: 400px;
-	background-color: #FF00AE;
 }
-.footer_social{
+
+.footer-copyright{
 	float: left;
-	height: 120px;
 	width: 400px;
-	background-color: #FF00AE;
-}
-.footer_copyright{
-	float: right;
-	height: 120px;
-	width: 400px;
-	background-color: #FF00AE;
 }
 
 .selection-hotels{
-	clear: both;
-	width: 1200px;
-	height: 562px;
-	background-color: #DBFF47;
-	margin-top: 0;
+	background-color: pink;
 }
+
 .infrastructure{
 	float: left;
-	width: 80px;
-	min-height: 150px;
-	background-color: #FF7D81;
 }
 
 .accommodation{
 	float: left;
-	width: 120px;
-	min-height: 150px;
-	background-color: #FF7D81;
 }
+
 .cost{
 	float: right;
-	width: 280px;
-	min-height: 150px;
-	background-color: #FF7D81;
 }
 
 .compilation-hotels{
-	float: left;
-	width: 1200px;
-	background-color: #FF312D;
+	background-color: lightblue;
 }
 
-.hotel{
+.sorting-hotels, .hotel{
 	float: left;
 	width: 1200px;
-	background-color: #59FC74;
 }
 
 .img-hotel{
 	float: left;
-	margin-left: 72px;
-	margin-top: 31px;
 }
 
 .reservation{
 	float: left;
-	margin-left: 30px;
-	margin-top: 30px;
 }
 
 .rating{
-	float: right;
-	margin-right: 73px;
-	margin-top: 29px;
+	float: right;	
 }
