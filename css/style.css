@@ -31,11 +31,13 @@ h1 {
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 26px;
+	margin: 0;
 }
 
 h2{
 	color: #000000;
 	font-weight: 700;
+	margin: 0;
 }
 
 .heading-reason {
@@ -50,13 +52,11 @@ h2{
 .nav-list{
 	list-style-type: none;
 	padding: 0;
-	background-color: yellow;
 }
 
 .nav-item{
 	float: left;
 	width: 240px;
-	background-color: red;
 }
 
 .nav-item:nth-child(3){
@@ -64,12 +64,7 @@ h2{
 }
 
 .main-header{
-	background-color: blue;
 	position: relative;
-}
-
-.main-navigation{
-	background-color: green;
 }
 
 .logo{
@@ -81,21 +76,15 @@ h2{
 
 .promo{
 	width: 1200px;
-	background-color: green;
 }
 
-.causes{
-	float: left;
-	background-color: pink;
-	width: 1200px;
-}
 
 .reason-line{
 	background-color: #81b3d2;
 	color: #ffffff;
 }
 
-.reason-block{
+.reason-block, .reason-block1{
 	float: left;
 	width: 400px;
 }
@@ -116,56 +105,14 @@ h2{
 	top: 50%;
 }
 
-.reason-row{
-	background-color: purple;
-}
-
-.reason-block1{
-	float: left;
-	width: 400px;
-}
-
-.hotel-search{
-	float: left;
-	background-color: lightblue;
-	width: 1200px;
-}
-
-.map{
-	float: left;
-	width: 1200px;
-	height: 473px;
-	position: relative;
-	overflow: hidden;
-}
-
-.map-img{
-	width: 100%;
-	height: auto;
-	transform: translateY(-50%);
-	position: absolute;
-	top: 50%;
-}
-
 .form{
-	float: left;
 	background-color: lightgreen;
 	margin-left: 368px;
 	margin-right: 368px;
 	width: 568px;
 }
 
-.footer-hashtag{
-	float: left;
-	width: 400px;
-}
-
-.footer-social{
-	float: left;
-	width: 400px;
-}
-
-.footer-copyright{
+.footer-hashtag, .footer-social, .footer-copyright{
 	float: left;
 	width: 400px;
 }
