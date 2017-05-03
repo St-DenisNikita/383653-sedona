@@ -13,6 +13,7 @@ body {
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #ffffff;
 }
 
 .clearfix::after{
@@ -105,8 +106,11 @@ h2{
 	top: 50%;
 }
 
+.map-img{
+	display: block;
+}
+
 .form{
-	background-color: lightgreen;
 	margin-left: 368px;
 	margin-right: 368px;
 	width: 568px;
@@ -117,15 +121,7 @@ h2{
 	width: 400px;
 }
 
-.selection-hotels{
-	background-color: pink;
-}
-
-.infrastructure{
-	float: left;
-}
-
-.accommodation{
+.infrastructure, .accommodation{
 	float: left;
 }
 
@@ -133,16 +129,12 @@ h2{
 	float: right;
 }
 
-.compilation-hotels{
-	background-color: lightblue;
-}
-
 .sorting-hotels, .hotel{
 	float: left;
 	width: 1200px;
 }
 
-.found, .sorting-name, .sorting-item{
+.found, .sorting-name, .sorting-item, .img-hotel, .reservation{
 	float: left;
 }
 
@@ -150,18 +142,6 @@ h2{
 	list-style-type: none;
 }
 
-.sorting-nav{
+.sorting-nav, .rating{
 	float: right;
-}
-
-.img-hotel{
-	float: left;
-}
-
-.reservation{
-	float: left;
-}
-
-.rating{
-	float: right;	
 }
