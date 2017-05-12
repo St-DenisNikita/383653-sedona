@@ -20,8 +20,8 @@
 						<li  class="nav-item">
 							<a href="#" class="nav-link">Карта штата</a>
 						</li>
-						<li  class="nav-item" class="nav-link">
-							<a href="#" class="nav-link">Гостиницы</a>
+						<li  class="nav-item">
+							<a href="#" class="nav-link active">Гостиницы</a>
 						</li>
 					</ul>
 				</nav>
@@ -38,58 +38,75 @@
 							<legend class="legend">Инфраструктура:</legend>
 								<label for="pool-select" class="label-check">
 									<input type="checkbox" name="pool" id="pool-select" class="checkbox" checked>
-									<span class="checkbox-custom"></span>
-								Бассейн</label>
+									<span class="checkbox-elem"></span>
+              						<span class="checkbox-custom"></span>
+								<span class="checkbox-signing-up">Бассейн</span></label>
 								<label for="parking-select" class="label-check">
 									<input type="checkbox" name="parking" id="parking-select" class="checkbox">
-								Парковка</label>
+									<span class="checkbox-elem"></span>
+              						<span class="checkbox-custom"></span>
+								<span class="checkbox-signing-up">Парковка</span></label>
 								<label for="WF-select" class="label-check">
 									<input type="checkbox" name="WF" id="WF-select" class="checkbox">
-								Wi-Fi</label>
+									<span class="checkbox-elem"></span>
+              						<span class="checkbox-custom"></span>
+								<span class="checkbox-signing-up">Wi-Fi</span></label>
 						</fieldset>
 						<fieldset class="accommodation">
-							<legend class="legend">Тип жилья:</legend>
-								<label for="hotel-select" class="label-check">
+							<legend class="legend legend-lodging">Тип жилья:</legend>
+								<label for="hotel-select" class="label-check label-check-lodging">
 									<input type="checkbox" name="hotel" id="hotel-select" class="checkbox" checked>
-								Гостиница</label>
-								<label for="motel-select" class="label-check">
+									<span class="checkbox-elem"></span>
+              						<span class="checkbox-custom"></span>
+								<span class="checkbox-signing-up">Гостиница</span></label>
+								<label for="motel-select" class="label-check label-check-lodging">
 									<input type="checkbox" name="motel" id="motel-select" class="checkbox" checked>
-								Мотель</label>
-								<label for="apartments-select" class="label-check">
+									<span class="checkbox-elem"></span>
+              						<span class="checkbox-custom"></span>
+								<span class="checkbox-signing-up">Мотель</span></label>
+								<label for="apartments-select" class="label-check label-check-lodging">
 									<input type="checkbox" name="apartments" id="apartments-select" class="checkbox" checked>
-								Апартаменты</label>
+									<span class="checkbox-elem"></span>
+              						<span class="checkbox-custom"></span>
+								<span class="checkbox-signing-up">Апартаменты</span></label>
 						</fieldset>
 						<fieldset class="cost">	
 							<legend class="legend">Стоимость в сутки (p):</legend>
-								<div class="price-select">
-									<label>от
-										<input type="text" name="price-min" value="0" placeholder="0">
+								<div class="price-controls">
+									<label class="price-min">от
+										<input type="text" name="price-min" value="0">
 									</label>
-									<label>до
-										<input type="text" name="price-max" value="3000" placeholder="3000">
+									<label class="price-max">до
+										<input type="text" name="price-max" value="3000">
 									</label>
 								</div>
-								<div class="manually-select">
-									<button class="button"></button>
-									<div class="line">
-									
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar">
+											
+										</div>
 									</div>
-									<button class="button"></button>
+									<div class="range-toggle range-toggle-min">
+										
+									</div>
+									<div class="range-toggle range-toggle-max">
+										
+									</div>
 								</div>
-								<button type="submit">Показать</button>
+								<button class="btn-transparent" type="submit">Показать</button>
 						</fieldset>
 					</form>
 				</div>
 				<div class="compilation-hotels clearfix">
 					<div class="sorting-hotels">
 						<div class="found">
-							<p class="found-text">Найдено:<span>3</span></p>
+							<p class="found-text">Найдено:<span> 3</span></p>
 						</div>
 						<div class="sorting clearfix">
 							<span class="sorting-name">Сортировка:</span>
 							<ul class="sorting-list clearfix">
 								<li class="sorting-item">
-									<a href="#" class="sorting-link">по цене</a>
+									<a href="#" class="sorting-link active-sorting-link">по цене</a>
 								</li>
 								<li class="sorting-item">
 									<a href="#" class="sorting-link">по типу</a>
@@ -99,7 +116,7 @@
 								</li>
 							</ul>
 							<a href="#" class="sorting-nav nav-up">вверх</a>
-							<a href="#"class="sorting-nav nav-down">вниз</a>
+							<a href="#"class="sorting-nav nav-down nav-down-active">вниз</a>
 						</div>
 					</div>
 					<div class="hotel">
@@ -113,13 +130,13 @@
 								<a href="#" class="btn-read">Подробнее</a>
 							</div>
 							<div class="make-reservation">	
-								<span class="make-phrase">от 3500</span>
+								<span class="make-phrase">от 4000 Р.</span>
 								<a href="#" class="btn-reserv">Забронировать</a>
 							</div>	
 						</div>
 						<div class="rating">
-							<img src="img/hotels-stars4.png" alt="четыре звезды" class="img-rating">
-							<a href="#" class="link-rating">Рейтинг: 8,5</a>
+							<div class="img-rating-hotel"> Четыре звезды</div>
+							<p class="link-rating">Рейтинг: 8,5</p>
 						</div>
 					</div>
 					<div class="hotel">
@@ -133,13 +150,13 @@
 								<a href="#" class="btn-read">Подробнее</a>
 							</div>
 							<div class="make-reservation">
-								<span class="make-phrase">от 2000</span>
+								<span class="make-phrase">от 3000 Р.</span>
 								<a href="#" class="btn-reserv">Забронировать</a>
 							</div>
 						</div>
 						<div class="rating">
-							<img src="img/hotels-stars2.png" alt="две звезды" class="img-rating">
-							<a href="#" class="link-rating">Рейтинг: 8,9</a>
+							<div class="img-rating-motel"> Две звезды</div>
+							<p class="link-rating">Рейтинг: 8,9</p>
 						</div>
 					</div>
 					<div class="hotel">
@@ -153,13 +170,13 @@
 								<a href="#" class="btn-read">Подробнее</a>
 							</div>
 							<div class="make-reservation">
-								<span class="make-phrase">от 4000</span>
+								<span class="make-phrase">от 2000 Р.</span>
 								<a href="#" class="btn-reserv">Забронировать</a>
 						</div>
 						</div>
 						<div class="rating">
-							<img src="img/hotels-stars3.png" alt="три звезды" class="img-rating">
-							<a href="#" class="link-rating">Рейтинг: 9,2</a>
+							<div class="img-rating-apartments"> Три звезды</div>
+							<p class="link-rating">Рейтинг: 9,2</p>
 						</div>
 					</div>
 				</div>
@@ -171,17 +188,15 @@
 					</span>
 				</div>
 				<div class="footer-social">
-					<a class="social_btm social-btn-twitter" href="#">Twitter</a>
-					<a class="social_btm social-btn-facebook" href="#">Facebook</a>
-					<a class="social_btm social-btn-youtube" href="#">YouTube</a>
+					<a class="social-btm social-btn-twitter" href="#">Twitter</a>
+					<a class="social-btm social-btn-facebook" href="#">Facebook</a>
+					<a class="social-btm social-btn-youtube" href="#">YouTube</a>
 				</div>
 				<div class="footer-copyright">
-					<span class="footer-line">
+					<div class="footer-line">
 						WEBSITE BY
-					</span>
-					<a class="btn1" href="https://htmlacademy.ru/intensive/htmlcss">
-						<img src="img/html_color.png" width="113" height="39" alt="HTML Academy">
-					</a>
+					</div>
+					<a class="footer-icon footer-icon-image" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 				</div>
 			</footer>
 		</div>
